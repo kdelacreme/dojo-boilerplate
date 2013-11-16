@@ -24,6 +24,9 @@ require({
 		'dijit',
 		'dojox',
 
+		{ name: 'jquery', location: 'jquery/dist', main: 'jquery' },
+		{ name: 'bootstrap', location: 'bootstrap/dist', main: 'bootstrap/js' },
+
 		// For reference, this is what a more verbose package declaration looks like.
 		{ name: 'app', location: 'app', map: {} }
 	]

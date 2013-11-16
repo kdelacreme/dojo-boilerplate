@@ -10,3 +10,9 @@
 [submodule "src/util"]
 	path = src/util
 	url = https://github.com/dojo/util.git
+[submodule "src/bootstrap"]
+	path = src/bootstrap
+	url = https://github.com/twbs/bootstrap.git
+[submodule "src/jquery"]
+	path = src/jquery
+	url = https://github.com/jquery/jquery.git

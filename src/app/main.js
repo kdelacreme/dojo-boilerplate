@@ -40,14 +40,20 @@ define([ 'dojo/has', 'require' ], function (has, require) {
 		 * plugin functionality.
 		 */
 		require([ './Dialog', 'dojo/domReady!' ], function (Dialog) {
-			app.dialog = new Dialog().placeAt(document.body);
+			require([ 'jquery/jquery' ], function () {
+				require([ 'bootstrap/js/bootstrap' ], function () {
 
-			// It is important to remember to always call startup on widgets after you have added them to the DOM.
-			// It will not hurt if you do it twice, but things will often not work right if you forget to do it.
-			app.dialog.startup();
+					app.dialog = new Dialog().placeAt(document.body);
 
-			// And now we just show the dialog to demonstrate that, yes, the example app has loaded successfully.
-			app.dialog.show();
+					// It is important to remember to always call startup on widgets after you have added them to the DOM.
+					// It will not hurt if you do it twice, but things will often not work right if you forget to do it.
+					app.dialog.startup();
+
+					// And now we just show the dialog to demonstrate that, yes, the example app has loaded successfully.
+					app.dialog.show();
+					
+				});
+			});
 		});
 	}
 	else {

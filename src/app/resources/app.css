@@ -8,3 +8,5 @@
 
 @import '../../dojo/resources/dojo.css';
 @import '../../dijit/themes/claro/claro.css';
+@import '../../bootstrap/dist/css/bootstrap.css';
+@import '../../bootstrap/dist/css/bootstrap-theme.css';
