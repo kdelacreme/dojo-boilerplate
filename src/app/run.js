@@ -23,6 +23,9 @@ require({
 		'dojo',
 		'dijit',
 		'dojox',
+		'dgrid',
+		'put-selector',
+		'xstyle',
 
 		{ name: 'jquery', location: 'jquery/dist', main: 'jquery' },
 		{ name: 'bootstrap', location: 'bootstrap/dist', main: 'bootstrap/js' },
